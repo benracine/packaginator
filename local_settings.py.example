@@ -41,11 +41,6 @@ EMAIL_SUBJECT_PREFIX = '[Django Packages] '
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = "CHANGE-THIS-KEY-TO-SOMETHING-ELSE"
 
-# You can remove this after you change your SECRET_KEY
-if SECRET_KEY == "CHANGE-THIS-KEY-TO-SOMETHING-ELSE":
-    raise Exception('You must change your SECRET_KEY settings in '
-            'local_settings.py.')
-
 # See http://celeryproject.org/docs/configuration.html#task-execution-settings
 CELERY_ALWAYS_EAGER = True
 CELERY_EAGER_PROPAGATES_EXCEPTIONS = True
